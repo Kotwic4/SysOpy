@@ -1,0 +1,178 @@
+
+
+*************************************************************************
+test library static
+testing list
+
+testing create
+real:0.000001 user:0.000000 sys:0.000000
+
+testing add(average time)
+real:0.000000 user:0.000000 sys:0.000000
+
+testing find(optimistic time)
+real:0.000001 user:0.000000 sys:0.000000
+
+testing find(pesimistic time)
+real:0.000018 user:0.000000 sys:0.000000
+
+delete delete(optimistic time)
+real:0.000001 user:0.000000 sys:0.000000
+
+testing delete(pesimistic time)
+real:0.000008 user:0.000000 sys:0.000000
+
+testing sort
+real:0.000224 user:0.000000 sys:0.000000
+
+testing free
+real:0.000091 user:0.000000 sys:0.000000
+
+testing tree
+
+testing create
+real:0.000001 user:0.000000 sys:0.000000
+
+testing add(average time)
+real:0.000001 user:0.000000 sys:0.000000
+
+testing find(optimistic time)
+real:0.000001 user:0.000000 sys:0.000000
+
+testing find(pesimistic time)
+real:0.000000 user:0.000000 sys:0.000000
+
+delete delete(optimistic time)
+real:0.000001 user:0.000000 sys:0.000000
+
+testing delete(pesimistic time)
+real:0.000001 user:0.000000 sys:0.000000
+
+testing rebuild
+real:0.000253 user:0.000000 sys:0.000000
+
+testing free
+real:0.000105 user:0.000000 sys:0.000000
+
+all test ended
+real:0.002247 user:0.000000 sys:0.000000
+
+*************************************************************************
+
+*************************************************************************
+test library shared
+testing list
+
+testing create
+real:0.000002 user:0.000000 sys:0.000000
+
+testing add(average time)
+real:0.000000 user:0.000000 sys:0.000000
+
+testing find(optimistic time)
+real:0.000002 user:0.000000 sys:0.000000
+
+testing find(pesimistic time)
+real:0.000015 user:0.000000 sys:0.000000
+
+delete delete(optimistic time)
+real:0.000001 user:0.000000 sys:0.000000
+
+testing delete(pesimistic time)
+real:0.000009 user:0.000000 sys:0.000000
+
+testing sort
+real:0.000242 user:0.000000 sys:0.000000
+
+testing free
+real:0.000093 user:0.000000 sys:0.000000
+
+testing tree
+
+testing create
+real:0.000001 user:0.000000 sys:0.000000
+
+testing add(average time)
+real:0.000001 user:0.000000 sys:0.000000
+
+testing find(optimistic time)
+real:0.000001 user:0.000000 sys:0.000000
+
+testing find(pesimistic time)
+real:0.000001 user:0.000000 sys:0.000000
+
+delete delete(optimistic time)
+real:0.000002 user:0.000000 sys:0.000000
+
+testing delete(pesimistic time)
+real:0.000001 user:0.000000 sys:0.000000
+
+testing rebuild
+real:0.000446 user:0.000000 sys:0.000000
+
+testing free
+real:0.000127 user:0.000000 sys:0.000000
+
+all test ended
+real:0.002372 user:0.000000 sys:0.000000
+
+*************************************************************************
+
+*************************************************************************
+test library dynamic loaded
+testing list
+
+testing create
+real:0.000027 user:0.000000 sys:0.000000
+
+testing add(average time)
+real:0.000001 user:0.000000 sys:0.000000
+
+testing find(optimistic time)
+real:0.000002 user:0.000000 sys:0.000000
+
+testing find(pesimistic time)
+real:0.000017 user:0.000000 sys:0.000000
+
+delete delete(optimistic time)
+real:0.000002 user:0.000000 sys:0.000000
+
+testing delete(pesimistic time)
+real:0.000009 user:0.000000 sys:0.000000
+
+testing sort
+real:0.000230 user:0.000000 sys:0.000000
+
+testing free
+real:0.000128 user:0.000000 sys:0.000000
+
+testing tree
+
+testing create
+real:0.000121 user:0.000000 sys:0.000000
+
+testing add(average time)
+real:0.000001 user:0.000000 sys:0.000000
+
+testing find(optimistic time)
+real:0.000001 user:0.000000 sys:0.000000
+
+testing find(pesimistic time)
+real:0.000001 user:0.000000 sys:0.000000
+
+delete delete(optimistic time)
+real:0.000002 user:0.000000 sys:0.000000
+
+testing delete(pesimistic time)
+real:0.000001 user:0.000000 sys:0.000000
+
+testing rebuild
+real:0.000250 user:0.000000 sys:0.000000
+
+testing free
+real:0.000129 user:0.000000 sys:0.000000
+
+all test ended
+real:0.002994 user:0.000000 sys:0.000000
+
+*************************************************************************

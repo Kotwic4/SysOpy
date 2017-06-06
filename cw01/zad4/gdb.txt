@@ -1,0 +1,13 @@
+zmienilem plik main.c dodajac nastepujace liniki na poczatku funkcji main:
+//zmiany
+struct Tree_book* tree = NULL;
+free_tree_book(tree);
+//koniec zmian
+
+powyzsze linjki powoduja probe zwolnienia pamieci ktora nie jest zajeta i nastepuje naruszenie ochrony pamieci ktore powoduje zrzut pamieci. Zrzut pamiec mozna stworzyc po przez odpalenie pliku main_sta albo po przez uruchoamienie tego pliku w debugerze dbg oraz samodzielne stworzenie zrzutu pamieci poprzez komende generate-core-file
+
+aby zanalizowac zrzut pamieci urzymy polecania gdb main_sta [nazwa pliku core] i nastepnie analizuje bledy w gdb
+
+aby latwo znalesc miejsce gdzie wystapil blad uzywamy komendy where i odrazu widzimy ze blad wystapil w linijkach ktore zostaly dodane. Widzimy ze program zostal zatrzymany signałem SIGSEGV czyli Segmentation fault dokladnie tak jak sie tego spodziewalismy. Korzystajac z polecen down mozemy dostac sie do danego wywolania funkcji oraz korzystajac z funkcji print zobaczycz wartosci zmienych jednak powyzszy blad nie wymaga takiej analizy bo odrazu widac ze funkcja free_tree_book przyjmuje brak parametru (), poniewaz kompliator zauwzyl ze tree=NULL i usunal zmiena.
+
+

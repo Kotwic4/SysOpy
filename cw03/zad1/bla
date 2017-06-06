@@ -1,0 +1,7 @@
+./demo bla
+#bla ba
+./demo bla
+./demo bla2
+#bla
+./demo bla
+ls -l

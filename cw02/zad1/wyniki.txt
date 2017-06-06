@@ -1,0 +1,124 @@
+Testy wykonalem na podanych rozmiarach rekordow: 4,512,4096,8192. Dla każdego z rozmiarow wykonalem testy dla 4000 i 8000 rekordow.
+
+Testy sortowania robilem na tych samych plikach aby oba przypadki byly takie same. Algorytm sortowania to naiwne sortowani babelkowe, ktore jak widac glownie zalezy od liczby elementow.
+
+Wyniki permutacji sa duzo mniejsze od czasu sortowan co bylo oczywiste poniewaz ma ja one zlozonosc liniowa a nie kwadratowa jak w przypadku sortowan.
+
+Roznice miedzy permutacjami sys i lib sa na tyle male ze mozna uznac ze sa one tak samo szybkie, ewentualnie szybsze za systemowe.
+Jednak przewaga malala przy zwiekszaniu rozmiarow rekordow oba typy sie wyrownaly.
+
+Przy sortowanaich widac duzo wieksze roznice miedzy sys i lib. Widac ze sys zuzywa wiecej czasu systemu a lib czasu uzytkownika.
+Przy malych plikach real time jest mniejszy dla lib a przy duzych dla sys. Konkluzje sa troche inne od tych dla funkcji shuffle i powodem moze byc wiekszy nacisk na odczyt i nie zbalansowanie operacji odczytu i zapisu.
+
+
+width=4, number=4000
+
+sort sys
+real 12.64 user 0.73 sys 9.66
+
+sort lib
+real 9.45 user 1.40 sys 6.30
+
+shuffle sys
+real 0.01 user 0.00 sys 0.00
+
+shuffle lib
+real 0.03 user 0.00 sys 0.00
+
+width=4, number=8000
+
+sort sys
+real 48.14 user 2.70 sys 38.21
+
+sort lib
+real 36.73 user 5.38 sys 25.40
+
+shuffle sys
+real 0.03 user 0.00 sys 0.00
+
+shuffle lib
+real 0.06 user 0.00 sys 0.02
+
+width=512, number=4000
+
+sort sys
+real 13.89 user 0.71 sys 10.65
+
+sort lib
+real 10.35 user 1.62 sys 6.72
+
+shuffle sys
+real 0.02 user 0.00 sys 0.00
+
+shuffle lib
+real 0.03 user 0.00 sys 0.01
+
+width=512, number=8000
+
+sort sys
+real 51.86 user 2.64 sys 41.35
+
+sort lib
+real 40.22 user 6.60 sys 26.56
+
+shuffle sys
+real 0.04 user 0.00 sys 0.01
+
+shuffle lib
+real 0.07 user 0.00 sys 0.02
+
+width=4096, number=4000
+
+sort sys
+real 19.34 user 0.72 sys 14.93
+
+sort lib
+real 24.13 user 2.42 sys 16.87
+
+shuffle sys
+real 0.03 user 0.00 sys 0.01
+
+shuffle lib
+real 0.03 user 0.00 sys 0.01
+
+width=4096, number=8000
+
+sort sys
+real 126.10 user 3.36 sys 68.22
+
+sort lib
+real 132.32 user 9.53 sys 68.60
+
+shuffle sys
+real 0.04 user 0.00 sys 0.02
+
+shuffle lib
+real 0.04 user 0.01 sys 0.02
+
+width=8192, number=4000
+
+sort sys
+real 45.16 user 0.92 sys 27.66
+
+sort lib
+real 46.53 user 2.69 sys 27.69
+
+shuffle sys
+real 0.03 user 0.00 sys 0.02
+
+shuffle lib
+real 0.03 user 0.00 sys 0.02
+
+width=8192, number=8000
+
+sort sys
+real 167.93 user 3.32 sys 105.24
+
+sort lib
+real 189.59 user 10.87 sys 107.65
+
+shuffle sys
+real 0.11 user 0.00 sys 0.04
+
+shuffle lib
+real 0.11 user 0.00 sys 0.04

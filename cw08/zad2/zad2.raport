@@ -1,0 +1,32 @@
+a)
+    -SIGUSR1(10)
+    -SIGTERM(15)
+    -SIGKILL(9)
+    -SIGSTOP(19)
+    1)
+    -Wszystko zabite(„Sygnał użytkownika 1”)
+    -Wszystko zabite („Zakończony”)
+    -Wszystko zabite(„Unicestwiony”)
+    -Wszystko przeniesione do tła, po wznowieniu, wszystkie wątki działają dalej.
+    2)
+    -To samo co w 1
+    -To samo co w 1
+    -To samo co w 1
+    -To samo co w 1
+    3)
+    -Główny watek wypisal sygnal i program był kontuowany
+    -Główny watek wypisal sygnal i program był kontuowany
+    -To samo co w 1
+    -To samo co w 1
+    4)
+    -Program działa normalnie
+    -Program działa normalnie
+    -To samo co w 1
+    -To samo co w 1
+    5)
+    -Wątek wyszedł wczesniej ze sleepa a tak to normalnie
+    -Wątek wyszedł wczesniej ze sleepa a tak to normalnie
+    -To samo co w 1
+    -To samo co w 1
+b)
+Błąd w obliczeniach zmiennoprzecinkowych (zrzut pamięci), Ubuntu 16.04 LTS, Wersja jadra 4.8.0-49-genetic, Maszyna wirtualna
